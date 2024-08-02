@@ -1,0 +1,1832 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  
+  <link rel="File-List" href="Release_Notes%20%28package%29_files/filelist.xml">
+
+  
+  <link rel="Edit-Time-Data" href="Release_Notes%20%28package%29_files/editdata.mso"><!--[if !mso]> <style> v\:* {behavior:url(#default#VML);} o\:* {behavior:url(#default#VML);} w\:* {behavior:url(#default#VML);} .shape {behavior:url(#default#VML);} </style> <![endif]--><title>Release Notes for STemWin Firmware Package</title><!--[if gte mso 9]><xml> <o:DocumentProperties> <o:Author>STMicroelectronics</o:Author> <o:LastAuthor>tguilhot</o:LastAuthor> <o:Revision>145</o:Revision> <o:TotalTime>461</o:TotalTime> <o:Created>2009-02-27T19:26:00Z</o:Created> <o:LastSaved>2010-12-13T14:14:00Z</o:LastSaved> <o:Pages>1</o:Pages> <o:Words>358</o:Words> <o:Characters>2045</o:Characters> <o:Company>STMicroelectronics</o:Company> <o:Lines>17</o:Lines> <o:Paragraphs>4</o:Paragraphs> <o:CharactersWithSpaces>2399</o:CharactersWithSpaces> <o:Version>11.9999</o:Version> </o:DocumentProperties> </xml><![endif]--><!--[if gte mso 9]><xml> <w:WordDocument> <w:View>Normal</w:View> <w:SpellingState>Clean</w:SpellingState> <w:GrammarState>Clean</w:GrammarState> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:Compatibility> <w:UseFELayout/> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" LatentStyleCount="156"> </w:LatentStyles> </xml><![endif]-->
+
+
+  
+
+  
+
+  
+  <style>
+<!--
+/* Font Definitions */
+@font-face
+{font-family:Wingdings;
+panose-1:5 0 0 0 0 0 0 0 0 0;
+mso-font-charset:2;
+mso-generic-font-family:auto;
+mso-font-pitch:variable;
+mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+{font-family:"MS Mincho";
+panose-1:2 2 6 9 4 2 5 8 3 4;
+mso-font-alt:"Arial Unicode MS";
+mso-font-charset:128;
+mso-generic-font-family:roman;
+mso-font-format:other;
+mso-font-pitch:fixed;
+mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+{font-family:Verdana;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+mso-font-charset:0;
+mso-generic-font-family:swiss;
+mso-font-pitch:variable;
+mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+{font-family:"\@MS Mincho";
+panose-1:0 0 0 0 0 0 0 0 0 0;
+mso-font-charset:128;
+mso-generic-font-family:roman;
+mso-font-format:other;
+mso-font-pitch:fixed;
+mso-font-signature:1 134676480 16 0 131072 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{mso-style-parent:"";
+margin:0cm;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+h1
+{mso-margin-top-alt:auto;
+margin-right:0cm;
+mso-margin-bottom-alt:auto;
+margin-left:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:1;
+font-size:24.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"MS Mincho";
+font-weight:bold;}
+h2
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:2;
+font-size:14.0pt;
+font-family:Arial;
+mso-fareast-font-family:"MS Mincho";
+font-weight:bold;
+font-style:italic;}
+h3
+{mso-margin-top-alt:auto;
+margin-right:0cm;
+mso-margin-bottom-alt:auto;
+margin-left:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:3;
+font-size:13.5pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"MS Mincho";
+font-weight:bold;}
+a:link, span.MsoHyperlink
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+p
+{mso-margin-top-alt:auto;
+margin-right:0cm;
+mso-margin-bottom-alt:auto;
+margin-left:0cm;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+@page Section1
+{size:612.0pt 792.0pt;
+margin:72.0pt 90.0pt 72.0pt 90.0pt;
+mso-header-margin:36.0pt;
+mso-footer-margin:36.0pt;
+mso-paper-source:0;}
+div.Section1
+{page:Section1;}
+/* List Definitions */
+@list l0
+{mso-list-id:1315182333;
+mso-list-template-ids:555131286;}
+@list l0:level1
+{mso-level-tab-stop:36.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level2
+{mso-level-tab-stop:72.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level3
+{mso-level-tab-stop:108.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level4
+{mso-level-tab-stop:144.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level5
+{mso-level-tab-stop:180.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level6
+{mso-level-tab-stop:216.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level7
+{mso-level-tab-stop:252.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level8
+{mso-level-tab-stop:288.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l0:level9
+{mso-level-tab-stop:324.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l1
+{mso-list-id:2024673066;
+mso-list-template-ids:154433278;}
+@list l1:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:36.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l1:level2
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:72.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l1:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0B0;
+mso-level-tab-stop:108.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;
+font-family:Symbol;}
+@list l1:level4
+{mso-level-tab-stop:144.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l1:level5
+{mso-level-tab-stop:180.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l1:level6
+{mso-level-tab-stop:216.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l1:level7
+{mso-level-tab-stop:252.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l1:level8
+{mso-level-tab-stop:288.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l1:level9
+{mso-level-tab-stop:324.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2
+{mso-list-id:2095200852;
+mso-list-type:hybrid;
+mso-list-template-ids:-391638944 67698693 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:36.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;
+font-family:Wingdings;}
+@list l2:level2
+{mso-level-tab-stop:72.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level3
+{mso-level-tab-stop:108.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level4
+{mso-level-tab-stop:144.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level5
+{mso-level-tab-stop:180.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level6
+{mso-level-tab-stop:216.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level7
+{mso-level-tab-stop:252.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level8
+{mso-level-tab-stop:288.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+@list l2:level9
+{mso-level-tab-stop:324.0pt;
+mso-level-number-position:left;
+text-indent:-18.0pt;}
+ol
+{margin-bottom:0cm;}
+ul
+{margin-bottom:0cm;}
+-->
+  </style><!--[if gte mso 10]> <style> /* Style Definitions */ table.MsoNormalTable {mso-style-name:"Table Normal"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-parent:""; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-para-margin:0cm; mso-para-margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:"Times New Roman"; mso-fareast-font-family:"Times New Roman"; mso-ansi-language:#0400; mso-fareast-language:#0400; mso-bidi-language:#0400;} </style> <![endif]-->
+  
+  <style type="disc">
+  </style><!--[if gte mso 9]><xml> <o:shapedefaults v:ext="edit" spidmax="45058"/> </xml><![endif]--><!--[if gte mso 9]><xml> <o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1"/> </o:shapelayout></xml><![endif]-->
+  
+  <meta content="MCD Application Team" name="author"></head><body link="blue" vlink="blue">
+<div class="Section1">
+<p class="MsoNormal"><span style="font-family: Arial;"><br>
+</span><span style="font-family: Arial;"><o:p></o:p></span></p>
+<div align="center">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+  <tbody>
+    <tr>
+      <td style="padding: 0cm;" valign="top">
+      <table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+        <tbody>
+          <tr style="">
+            <td style="padding: 1.5pt;">
+            <h1 style="margin-bottom: 0.25in; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana; color: rgb(51, 102, 255);">Release
+Notes for<o:p></o:p> STemWin Firmware Package<br>
+            </span></h1>
+            
+            <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;">Copyright
+© 2014 STMicroelectronics</span><span style="color: black;"><u1:p></u1:p><o:p></o:p></span></p>
+            <p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt;"><img style="border: 0px solid ; width: 106px; height: 79px;" alt="" id="_x0000_i1025" src="_htmresc/st_logo.png"></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="MsoNormal"><span style="font-family: Arial; display: none;"><o:p>&nbsp;</o:p></span></p>
+      <table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" width="900">
+        <tbody>
+          <tr style="">
+            <td style="padding: 0cm;" valign="top">
+            
+            
+            
+            
+            <div style="margin-left: 40px;">
+            <div style="text-align: justify;"><span style="font-size: 10pt; font-family: Verdana;"><br>
+A
+partnership with Segger Microcontroller GmbH &amp; Co. KG enables
+STMicroelectronics to provide STemWin Library, a product based on
+Segger&#8217;s graphic library emWin.</span><br>
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library</span> is a <span style="font-weight: bold;">professional graphical stack library</span> enabling the building up of Graphical User Interfaces (<span style="font-weight: bold;">GUIs</span>) with <span style="font-weight: bold;">any STM32</span>, <span style="font-weight: bold;">any LCD/TFT display</span> and <span style="font-weight: bold;">any LCD/TFT controller</span>, taking advantage of <span style="font-weight: bold;">STM32 hardware accelerations</span> whenever possible.</span><br>
+            <span style="font-size: 10pt; font-family: Verdana;">STemWin
+Library is a comprehensive solution coming with rich features such as
+JPG, GIF and PNG decoding, many widgets (checkboxes, buttons&#8230;) and a
+VNC server allowing to display remotely a local display, but also
+professional tools such as GUIBuilder to create&nbsp; dialog boxes by
+drag and drop, a font converter, etc.</span><br>
+            <span style="font-size: 10pt; font-family: Verdana;"></span></div>
+            <span style="font-size: 10pt; font-family: Verdana;"><br>
+For more details, please refer to the document "<span style="font-weight: bold;">AN4323 Getting started with STemWin Library</span>", available for download from the STMicroelectronics microcontrollers website: <a href="www.st.com/STM32" target="_blank">www.st.com/STM32</a><br>
+            </span></div>
+
+            
+            
+            
+            <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a name="History"></a><span style="font-size: 12pt; color: white;">Update
+history</span></h2>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V1.1.2 / 28-January-2014<o:p></o:p></span></h3>
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL examples<br>
+                </span></li>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Update LCD configuration file of Lin driver (LCDConf_stm324x9i_eval_*.c):</span></li>
+                <ul>
+                  <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Update pixel format management to be generic (support all pixel formats using global define)</span></li>
+                </ul>
+                <ul>
+                  <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Enhance multi-layer feature</span></li>
+                </ul>
+                <ul>
+                  <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Optimize multi-buffering use</span></li>
+                </ul>
+                <ul>
+                  <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Fix typos</span></li>
+                </ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Remove PH3 pin configuration into stm32f4xx_eth_bsp.c (to avoid conflict with SDRAM)<br>
+<br>
+                  </span></li>
+
+              </ul>
+            </ul>
+
+
+            <br>
+
+
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.22 </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Libraries/STemWinLibrary522/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx CMSIS V1.2.0 </span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F0xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx CMSIS V1.2.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32L1xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx CMSIS V1.1.3</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F2xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F30x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F37x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.3.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F0xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Driver V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx_StdPeriph_Driver V1.1.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F2xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F30x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x_StdPeriph_Driver V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F37x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx_StdPeriph_Driver V1.3.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32L1xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL_Common V5.0.2 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM320518_EVAL V1.1.0 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM320518_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL V5.1.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32100B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E_EVAL V5.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32100E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG_EVAL V5.1.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM322xG_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C_EVAL V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32303C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C_EVAL V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32373C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL V1.1.2 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152_EVAL V5.0.2</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32L152_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D_EVAL V1.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32L152D_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I_EVAL V1.0.3</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM324x9I_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">LwIP V1.4.1 </span><span style="font-size: 10pt; font-family: Verdana;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/lwip-1.4.1/CHANGELOG">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.60.1 + ST-Link debug probe<br>
+</span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller 
+Development Kit (MDK-ARM) toolchain V4.72a +&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;">ST-Link </span><span style="font-size: 10pt; font-family: Verdana;">debug probe</span><span style="font-size: 10pt; font-family: Verdana;"></span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">Atollic TrueSTUDIO toolchain V4.2.0 + ST-LINK <br>
+</span></li>
+            </ul>
+
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(Integrated LCD controller)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)<br>
+                    </span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F3 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul>
+            </ul>
+
+
+
+
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            <ul style="list-style-type: square;">
+<li><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL board example: the
+pointer is hidden due to a limitation in the LCD driver regarding the
+&#8220;ReadRAM&#8221; functionality needed for XOR operation during the pointer
+position update</span></li>
+            </ul>
+            <br>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V1.1.1 / 15-November-2013<o:p></o:p></span></h3>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL examples<br>
+                </span></li>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">Update <span style="font-style: italic;">LCDConf_stm324x9i_eval_MB1063.c</span> and <span style="font-style: italic;">LCDConf_stm324x9i_eval_MB1046.c</span> to optimize the use of LTDC and DMA2D features</span></li>
+              </ul>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">Update <span style="font-style: italic;">GUIConf_stm324x9i_eval.c</span> to optimize the system memory usage for the GUI internal heap</span></li>
+              </ul>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STemWin Library V5.22</span><br>
+<span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;"></span></li>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">Update LCDConf.c template for LIN and FlexColor Driver</span></li>
+              </ul>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">Add generic LCD Driver template</span></li>
+              </ul>
+            </ul>
+
+            <br>
+
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.22 </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Libraries/STemWinLibrary522/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx CMSIS V1.2.0 </span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F0xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx CMSIS V1.2.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32L1xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx CMSIS V1.1.3</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F2xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F30x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F37x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.3.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F0xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Driver V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx_StdPeriph_Driver V1.1.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F2xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F30x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x_StdPeriph_Driver V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F37x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx_StdPeriph_Driver V1.3.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32L1xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL_Common V5.0.2 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM320518_EVAL V1.1.0 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM320518_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL V5.1.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32100B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E_EVAL V5.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32100E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG_EVAL V5.1.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM322xG_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C_EVAL V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32303C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C_EVAL V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32373C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL V1.1.2 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152_EVAL V5.0.2</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32L152_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D_EVAL V1.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32L152D_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I_EVAL V1.0.3</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM324x9I_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">LwIP V1.4.1 </span><span style="font-size: 10pt; font-family: Verdana;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/lwip-1.4.1/CHANGELOG">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.60.1 + ST-Link debug probe<br>
+</span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller 
+Development Kit (MDK-ARM) toolchain V4.72a +&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;">ST-Link </span><span style="font-size: 10pt; font-family: Verdana;">debug probe</span><span style="font-size: 10pt; font-family: Verdana;"></span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">Atollic TrueSTUDIO toolchain V4.2.0 + ST-LINK <br>
+</span></li>
+            </ul>
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(Integrated LCD controller)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)<br>
+                    </span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F3 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul>
+            </ul>
+
+
+
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="list-style-type: square;">
+<li><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL board example: the
+pointer is hidden due to a limitation in the LCD driver regarding the
+&#8220;ReadRAM&#8221; functionality needed for XOR operation during the pointer
+position update</span></li>
+            </ul>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V1.1.0 / 11-October-2013<o:p></o:p></span></h3>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Official release supporting <span style="font-weight: bold;">STM32429xx/439xx devices</span>&nbsp;</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;"></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">and </span><span style="font-size: 10pt; font-family: Verdana; font-weight: bold;">STM324x9I-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; font-weight: bold;">board</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">Use </span><span style="font-size: 10pt; font-family: Verdana;">Segger</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;"> <span style="font-weight: bold;">emWin </span>latest version<span style="font-weight: bold;"> V5.22</span></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; font-weight: bold;"><br>
+                </span></li>
+
+            </ul>
+            <br>
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.22 </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Libraries/STemWinLibrary522/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx CMSIS V1.2.0 </span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F0xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx CMSIS V1.2.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32L1xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx CMSIS V1.1.3</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F2xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F30x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F37x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.2.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F0xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Driver V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx_StdPeriph_Driver V1.1.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F2xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F30x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x_StdPeriph_Driver V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F37x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx_StdPeriph_Driver V1.2.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32L1xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL_Common V5.0.2 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM320518_EVAL V1.1.0 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM320518_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL V5.1.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32100B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E_EVAL V5.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32100E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG_EVAL V5.1.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM322xG_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C_EVAL V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32303C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C_EVAL V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32373C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL V1.1.2 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152_EVAL V5.0.2</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32L152_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D_EVAL V1.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32L152D_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I_EVAL V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM324x9I_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">LwIP V1.4.1 </span><span style="font-size: 10pt; font-family: Verdana;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/lwip-1.4.1/CHANGELOG">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.60.1 + ST-Link debug probe<br>
+</span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller 
+Development Kit (MDK-ARM) toolchain V4.72a +&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;">ST-Link </span><span style="font-size: 10pt; font-family: Verdana;">debug probe</span><span style="font-size: 10pt; font-family: Verdana;"></span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">Atollic TrueSTUDIO toolchain V4.2.0 + ST-LINK <br>
+</span></li>
+            </ul>
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(Integrated LCD controller)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)<br>
+                    </span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F3 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul>
+            </ul>
+
+
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="list-style-type: square;">
+              <li><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL board example: the
+pointer is hidden due to a limitation in the LCD driver regarding the
+&#8220;ReadRAM&#8221; functionality needed for XOR operation during the pointer
+position update</span></li>
+            </ul>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V1.0.0 / 22-July-2013<o:p></o:p></span></h3>
+
+
+
+
+
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">First Official release of <span style="font-weight: bold;">STemWin Firmware Package</span></span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Upgrade to use SEGGER emWin version V5.20d <br>
+                </span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add&nbsp;
+FlexColor (indirect access) driver for serial and parallel bus external
+LCD controllers available on all STM32 EVAL boards</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">The generated Library binaries are compiler dependent, three version are available for ARM, IAR and GCC compilers. <br>
+                </span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">\Config: LCD configuration files for STM32 EVAL boards moved under the examples folders</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add support for </span><span style="font-size: 10pt; font-family: Verdana;">Atollic TrueSTUDIO toolchain</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline; font-style: italic;">IMPORTANT
+NOTE:</span> STemWin Library root folder and generated binaries names were changed vs. previous
+release and thus you have to update your project settings accordingly:<br>
+  </span></li>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">update include path from "\Libraries\STemWinLibrary520" to </span><span style="font-size: 10pt; font-family: Verdana;">"\Libraries\STemWinLibrary520d"</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add latest version of the library "STemWinv_CMx_YY_C.a" (for</span><span style="font-size: 10pt; font-family: Verdana;"> ARM and IAR compilers</span><span style="font-size: 10pt; font-family: Verdana;">) or </span><span style="font-size: 10pt; font-family: Verdana;">"STemWinv_CMx_YY_C.lib" (for </span><span style="font-size: 10pt; font-family: Verdana;">GCC compiler), located under \Libraries\STemWinLibrary520d\Lib</span></li>
+              </ul>
+</ul><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span></span><br>
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.20d </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Libraries/STemWinLibrary520d/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx CMSIS V1.0.2 </span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F0xx/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx CMSIS V1.2.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32L1xx/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx CMSIS V1.1.3</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F2xx/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F30x/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F37x/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.1.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F0xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Driver V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx_StdPeriph_Driver V1.1.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F2xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F30x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x_StdPeriph_Driver V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F37x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx_StdPeriph_Driver V1.1.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Libraries/STM32L1xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL_Common V5.0.2 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM320518_EVAL V1.0.0 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM320518_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210B_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL V5.1.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM3210C_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32100B_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E_EVAL V5.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32100E_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG_EVAL V5.1.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM322xG_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C_EVAL V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32303C_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C_EVAL V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32373C_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL V1.1.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152_EVAL V5.0.2</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/STM32_EVAL/STM32L152_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D_EVAL V1.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="Utilities/STM32_EVAL/STM32L152D_EVAL/Release_Notes.html">release
+notes</a>)</span></li>
+              
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">LwIP V1.4.1 </span><span style="font-size: 10pt; font-family: Verdana;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="Utilities/Third_Party/lwip-1.4.1/CHANGELOG">release
+notes</a>)</span></li>
+
+            </ul>
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.40 + ST-Link debug probe<br>
+</span></li>
+              <li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller 
+Development Kit (MDK-ARM) toolchain V4.60 +&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;">ST-Link </span><span style="font-size: 10pt; font-family: Verdana;">debug probe</span><span style="font-size: 10pt; font-family: Verdana;"></span></li><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">Atollic TrueSTUDIO toolchain V4.0.0 + ST-LINK <br>
+</span></li>
+
+            </ul>
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4 series</span></li>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li>
+              </ul>
+              
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2 series</span></li>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)<br>
+                    </span></li>
+              </ul>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F1 series</span></li>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li>
+              </ul>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li>
+              </ul>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li>
+              </ul>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li>
+              </ul>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li>
+              </ul>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F3 series</span></li>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li>
+              </ul>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li>
+              </ul>
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1 series</span></li>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li>
+              </ul>
+              <ul>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li>
+              </ul>
+            </ul>
+
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL board example: the
+pointer is hidden due to a limitation in the LCD driver regarding the
+&#8220;ReadRAM&#8221; functionality needed for XOR operation during the pointer
+position update.</span></li></ul>
+            
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V1.0.0RC2 / 15-April-2013<o:p></o:p></span></h3>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add <span style="font-weight: bold;">VNC example running on </span></span><span style="font-size: 10pt; font-family: Verdana; font-weight: bold;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; font-weight: bold;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;"><span style="font-weight: bold;">board</span> </span><span style="font-size: 10pt; font-family: Verdana;">(</span><span style="font-size: 10pt; font-family: Verdana;">STM32F40x/41x devices) <br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">This is a special release for VNC evaluation on </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board and </span><span style="font-size: 10pt; font-family: Verdana;">only
+the components used for this example are provided; to have the full
+version of STemWin library and examples on other STM32 boards, you need
+to use V1.0.0RC1 release.</span><span style="font-size: 10pt; font-family: Verdana;"></span><br>
+                <span style="font-size: 10pt; font-family: Verdana;">
+&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"></span></li>
+            </ul>
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.20 </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Libraries/STemWinLibrary520/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.0.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx_StdPeriph_Driver V1.0.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4x7_ETH_Driver V1.1.0RC1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Libraries/STM32F4x7_ETH_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL_Common V5.0.2 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL V1.1.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">LwIP V1.4.1 </span><span style="font-size: 10pt; font-family: Verdana;">&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Utilities/Third_Party/lwip-1.4.1/CHANGELOG">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.40 + ST-Link debug probe<br>
+</span></li>
+            </ul>
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F40x/41x devices and </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li>
+            </ul>
+
+            <span style="font-size: 10pt; font-family: Verdana;"><br>
+            </span>
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">None<br>
+</span></li>
+            </ul>
+
+
+            
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V1.0.0RC1 / 18-March-2013<o:p></o:p></span></h3>
+
+
+
+
+
+            
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Upgrade
+to use SEGGER emWin latest version V5.20<br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add
+LCD drivers support and examples for the following STMicroelectronics
+Evaluation boards, with updated organization of the Project folder:
+projects are provided per board and for each board 2 examples are
+provided; FreeRTOS based and standalone.<br>
+</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG-EVAL (FSMC interface)<br>
+                    </span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C-EVAL (SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E-EVAL (FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL (SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E-EVAL (FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL (SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F3 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL (SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C-EVAL (SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL (SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D-EVAL (FSMC interface)</span></li></ul></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add support of </span><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller 
+Development Kit (MDK-ARM) toolchain</span><span style="font-size: 10pt; font-family: Verdana;"></span><br>
+                <span style="font-size: 10pt; font-family: Verdana;">
+&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"></span></li>
+            </ul>
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.20 </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/STemWinLibrary520/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx CMSIS V1.0.2 </span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F0xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx CMSIS V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32L1xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx CMSIS V1.1.3</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F2xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F30x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x CMSIS V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F37x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.2.0RC2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F0xx_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F0xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Driver V3.6.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2xx_StdPeriph_Driver V1.1.2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F2xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F30x_StdPeriph_Driver V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F30x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F37x_StdPeriph_Driver V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F37x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx_StdPeriph_Driver V1.2.0RC2</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1xx_StdPeriph_Driver V1.2.0</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32L1xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL_Common V5.0.2 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM320518_EVAL V1.0.0 </span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM320518_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3210B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL V5.1.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3210C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B_EVAL V5.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM32100B_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E_EVAL V5.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM32100E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG_EVAL V5.1.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM322xG_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C_EVAL V1.0.1</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM32303C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C_EVAL V1.0.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM32373C_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL V1.1.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152_EVAL V5.0.2</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM32L152_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D_EVAL V1.0.1 </span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM32L152D_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I_EVAL V0.2.0</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM324x9I_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.50 + ST-Link debug probe<br>
+</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use </span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">STM32F429x/439x</span><span style="font-size: 10pt; font-family: Verdana;"> devices with&nbsp;</span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">EWARM </span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-style: italic;">V6.40</span> or later</span><span style="font-size: 10pt; font-family: Verdana;">. If you do not have this patch installed, you can install it from the following&nbsp;folder "<span style="font-style: italic;">\Examples\Utilities\Third_Party\EWARM_STM32F4x9_Patch</span>".</span></li></ul><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller 
+Development Kit (MDK-ARM) toolchain V4.60 +&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;">ST-Link </span><span style="font-size: 10pt; font-family: Verdana;">debug probe</span><span style="font-size: 10pt; font-family: Verdana;"></span></li><ul><li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;"><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use </span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">STM32F429x/439x</span><span style="font-size: 10pt; font-family: Verdana;"> devices with&nbsp;</span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">EWARM </span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-style: italic;">V4.60</span> or later</span><span style="font-size: 10pt; font-family: Verdana;">. If you do not have this patch installed, you can install it from the following&nbsp;folder "<span style="font-style: italic;">\Examples\Utilities\Third_Party\MDKARM_STM32F4x9_Patch</span>".</span><span style="font-size: 10pt; font-family: Verdana;"></span></li></ul>
+            </ul>
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(Integrated LCD controller)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F2 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM322xG-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)<br>
+                    </span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100E-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F3 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32303C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32373C-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L1 series</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(SPI interface)</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152D-EVAL </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">board </span><span style="font-size: 10pt; font-family: Verdana;">(FSMC interface)</span></li></ul>
+            </ul>
+
+
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Due to lack of memory space the following configurations are not covered:</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32L152-EVAL + MDK-ARM + RTOS</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32100B-EVAL + RTOS</span></li></ul><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210B-EVAL + MDK-ARM + RTOS</span></li></ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">For
+the STM32303C-EVAL board, when moving the pointer it leaves a black
+trace because the LCD driver for this board does not support the read
+back pixel value due to a hardware issue.</span></li>
+            </ul>
+
+            <br>
+
+            
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V0.2.0 / 04-February-2013<o:p></o:p></span></h3>
+
+
+
+
+            
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">V0.1.0 known limitations fixed</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Provides three version of the STemWin Library: Full, Advanced and Basic</span><br>
+                <span style="font-size: 10pt; font-family: Verdana;">
+&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"></span></li>
+            </ul>
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.18d </span></span><span style="font-size: 10pt; font-family: Verdana;">(<a href="../../STemWin_Library_STEP5/STemWin_VNC/STemWinLibrary518/Release_Notes.html">release
+notes</a>)</span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;"></span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32</span><span style="font-size: 10pt; font-family: Verdana;">F1</span><span style="font-size: 10pt; font-family: Verdana;">0x_StdPeriph_Driver V3.6.1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL board drivers&nbsp;V5.1.0 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.2.0RC1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32</span><span style="font-size: 10pt; font-family: Verdana;">F4</span><span style="font-size: 10pt; font-family: Verdana;">xx_StdPeriph_Driver </span><span style="font-size: 10pt; font-family: Verdana;">V1.2.0RC1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL board drivers&nbsp;V1.1.1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I_EVAL board drivers&nbsp;V0.1.0 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM324x9I_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL Common drivers V5.0.2 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.40 + ST-Link debug probe<br>
+</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use </span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">STM32F429x/439x</span><span style="font-size: 10pt; font-family: Verdana;"> devices with&nbsp;</span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">EWARM </span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-style: italic;">V6.40</span> or later</span><span style="font-size: 10pt; font-family: Verdana;">. If you do not have this patch installed, you can install it from the following&nbsp;folder "<span style="font-style: italic;">\Examples\Utilities\Third_Party\EWARM_STM32F4x9_Patch</span>".</span></li></ul>
+            </ul>
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F103x
+High Density devices and&nbsp;</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM3210E-EVAL
+board</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F40x/41x
+devices and </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL
+board</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F429x/439x devices and </span><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL board</span></li>
+            </ul>
+
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+
+            
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">None</span></li>
+            </ul>
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span>
+            
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 223px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V0.1.0 / 25-January-2013<o:p></o:p></span></h3>
+
+
+
+            
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">First </span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold; font-style: italic;">STemWin Library package</span> including </span><span style="font-size: 10pt; font-family: Verdana;">examples running on <span style="font-weight: bold; font-style: italic;">STM3210E-EVAL</span>, <span style="font-weight: bold;">STM324xG-EVAL</span> and <span style="font-weight: bold; font-style: italic;">STM324x9I-EVAL</span> boards.</span><span style="font-size: 10pt; font-family: Verdana;"><br>
+&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"></span></li>
+            </ul>
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span>
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Contents<o:p></o:p></span></u></b></p>
+
+
+
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">STemWin Library V5.18d</span><br>
+                </span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Cortex-M CMSIS </span><span style="font-size: 10pt; font-family: Verdana;">V3.01 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/index.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F10x CMSIS V3.6.1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F10x/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32</span><span style="font-size: 10pt; font-family: Verdana;">F1</span><span style="font-size: 10pt; font-family: Verdana;">0x_StdPeriph_Driver V3.6.1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F10x_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL board drivers&nbsp;V5.1.0 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3210E_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F4xx CMSIS V1.2.0RC1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">STM32</span><span style="font-size: 10pt; font-family: Verdana;">F4</span><span style="font-size: 10pt; font-family: Verdana;">xx_StdPeriph_Driver </span><span style="font-size: 10pt; font-family: Verdana;">V1.2.0RC1</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Libraries/STM32F4xx_StdPeriph_Driver/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM3240_41_G_EVAL board drivers&nbsp;V1.1.1 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM3240_41_G_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM324x9I_EVAL board drivers&nbsp;V0.1.0 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/STM324x9I_EVAL/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL Common drivers V5.0.2 (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/STM32_EVAL/Common/Release_Notes.html">release
+notes</a>)</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FreeRTOS V7.1.1&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"> (<a href="../../STemWin_Library_STEP5/STemWin_VNC/Examples/Utilities/Third_Party/FreeRTOS/readme.txt">release
+notes</a>)</span></li>
+            </ul>
+
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><br>
+
+
+
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Development
+Toolchains and Compilers<o:p></o:p></span></u></b></p>
+
+
+
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded
+Workbench for ARM (EWARM) toolchain V6.40 + ST-Link debug probe<br>
+</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use </span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">STM32F429x/439x</span><span style="font-size: 10pt; font-family: Verdana;"> devices with&nbsp;</span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">EWARM </span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-style: italic;">V6.40</span> or later</span><span style="font-size: 10pt; font-family: Verdana;">. If you do not have this patch installed, you can install it from the following&nbsp;folder "<span style="font-style: italic;">\Examples\Utilities\Third_Party\EWARM_STM32F4x9_Patch</span>".</span></li></ul>
+            </ul>
+
+
+
+            <span style="font-size: 10pt; font-family: Verdana;">&nbsp;<br>
+            </span>
+            
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Supported
+Devices and EVAL boards<o:p></o:p></span></u></b></p>
+
+
+
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F103x
+devices and&nbsp;</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM3210E-EVAL
+board</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F40x/41x
+devices and </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM324xG-EVAL
+board</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">STM32F429x/439x devices and </span><span style="font-size: 10pt; font-family: Verdana;">STM324x9I-EVAL board</span></li>
+            </ul>
+
+
+            
+
+            <span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"></span></span><span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+            </span>
+            
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 23px; width: 868px;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Known Limitations<o:p></o:p></span></u></b></p>
+
+
+
+
+            
+            
+            
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">For the STM324x9I-EVAL example, for both modes (Standalone &amp; FreeRTOS), the touch screen is not fully functional</span></li><ul><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">The query of the pointer position through the touch screen hangs momently due to a limitation in the low level driver of the I²C</span></li><li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">This limitation will be fixed in the next release</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;"><br>
+</span></li></ul>
+            </ul>
+
+            <br>
+            <ul style="margin-top: 0cm;" type="square">
+
+
+
+            
+            </ul>
+
+<span style="font-size: 10pt; font-family: Verdana; color: black;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span><span style="font-size: 10pt; font-family: Verdana;"></span>
+            <ul style="margin-top: 0cm;" type="square">
+            </ul>
+            <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a name="License"></a><span style="font-size: 12pt; color: white;">License<o:p></o:p></span></h2><p class="MsoNormal"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">Licensed under MCD-ST Liberty SW License Agreement V2, (the "License"); You may not use this&nbsp;</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">package</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"> except in compliance with the License. You may obtain a copy of the License at:<br><br></span></p><div style="text-align: center;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="http://www.st.com/software_license_agreement_liberty_v2">http://www.st.com/software_license_agreement_liberty_v2</a></span><br><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"></span></div><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"><br>Unless
+required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, <br>WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See
+the License for the specific language governing permissions and
+limitations under the License.</span>
+            <div class="MsoNormal" style="text-align: center;" align="center"><span style="color: black;">
+            <hr align="center" size="2" width="100%"></span></div>
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">For
+    complete documentation on </span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">STM32<span style="color: black;">
+    Microcontrollers visit </span><u><span style="color: blue;"><a href="http://www.st.com/internet/mcu/family/141.jsp" target="_blank">www.st.com/STM32</a></span></u></span><a href="http://www.st.com/stm32" target="_blank"></a><span style="font-size: 10pt; font-family: Verdana;"><a target="_blank" href="http://www.st.com/internet/mcu/family/141.jsp"><u><span style="color: blue;"></span></u></a></span><span style="color: black;"><o:p></o:p></span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="MsoNormal"><span style="font-size: 10pt;"><o:p></o:p></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+
+</body></html>
